@@ -4,7 +4,17 @@
 * Author: Chen Jiang(姜晨) -- orange8637@gmail.com
 * Description: 简单的vim配置，目前只针对c/c++
 */
-git clone git@github.com:orange8637/myvim.git
-mkdir .vim
-cp -r myvim .vim
+这是一个简单的vim配置
+依赖:
+vim 7.0+
+ctags
+步骤:
+git clone git@github.com:orange8637/myvim.git ~/.vim
+cp vimrc ~/.vimrc
+常用用法:
+F5 一键编译单源文件
+F6 一键运行
+F12 .h .cpp/.c 快速切换
+TAB 超级补全
+wm 正常模式下按wm调出资源管理与类管理
 
