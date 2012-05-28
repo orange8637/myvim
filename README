@@ -9,8 +9,8 @@
 vim 7.0+
 ctags
 步骤:
-git clone git@github.com:orange8637/myvim.git ~/.vim
-cp vimrc ~/.vimrc
+	git clone git@github.com:orange8637/myvim.git ~/.vim
+	cp vimrc ~/.vimrc
 常用用法:
 F5 一键编译单源文件
 F6 一键运行
