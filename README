@@ -1,0 +1,10 @@
+/*
+* Filename: README
+* Last modified: 2012-05-28 17:29
+* Author: Chen Jiang(姜晨) -- orange8637@gmail.com
+* Description: 简单的vim配置，目前只针对c/c++
+*/
+git clone git@github.com:orange8637/myvim.git
+mkdir .vim
+cp -r myvim .vim
+
