@@ -17,7 +17,13 @@ nmap wm :WMToggle<cr>
 nnoremap <silent> <F12> :A<CR>
 "STL补全
 set tags+=~/.vim/tags
-"缩进,set no autoindent,no cindent
+"代码折叠
+set foldenable              " 开始折叠
+set foldmethod=syntax       " 设置语法折叠
+set foldcolumn=0            " 设置折叠区域的宽度
+set foldlevelstart=99       " 打开文件是默认不折叠代码
+nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+"缩进,set no autoindent,nocindent
 set number
 set autoindent
 set cindent
@@ -43,12 +49,12 @@ function AddTitle1()
 	call append(4,"#Description: ")
 endf
 map fucks :call AddTitle1():$o
-"F5一键编译单源文件，F6一键运行
+"超级补全TAB
 filetype plugin indent on
 set completeopt=longest,menu
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
-"
+"F5一键编译单源文件，F6一键运行
 func! CompileGcc()
     exec "w"
     let compilecmd="!gcc "
