@@ -7,7 +7,7 @@ set history=1000
 syntax enable
 syntax on
 "配色
-colorscheme darkblue
+colorscheme desert
 "正常模式下按wm
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
