@@ -1,4 +1,10 @@
-
+"编码问题，保存为set fileencoding=gb18030,打开检测set fileencodings
+set fileencodings=ucs-bom,utf-8,GB18030,gbk
+set fileencoding=utf-8
+set encoding=utf-8
+"底部状态栏，隐藏则set laststatus=0
+set statusline=%<[%n]\%F\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}][%{&ff}][ASCII=\%03.3b]\ %-10.(%l,%c%V%)\ %P
+set laststatus=2
 "不要使用vi的键盘模式，而是vim自己的 
 set nocompatible
 "history文件中需要记录的行数 
