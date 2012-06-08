@@ -24,4 +24,5 @@ fucks 正常模式按下在文首自动注释bash格式
 改进：
 可以打开gb编码文件
 底部状态栏可以显示编码类型
-
+复制外部代码进vim,取消自动注释与缩进set noautoindent, set nocindent, set fo-=r
+"+p, "+y 系统剪贴板
