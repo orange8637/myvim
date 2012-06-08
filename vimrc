@@ -29,13 +29,15 @@ set foldmethod=syntax       " 设置语法折叠
 set foldcolumn=0            " 设置折叠区域的宽度
 set foldlevelstart=99       " 打开文件是默认不折叠代码
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
-"缩进,set no autoindent,nocindent
+"缩进,set noautoindent,nocindent
 set number
 set autoindent
 set cindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+"取消自动注释set noautoindent,set fo-=r
+set fo-=r
 "fuckc 添加首注释
 function AddTitle()
 	call setline(1,"/*")
