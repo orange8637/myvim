@@ -22,6 +22,8 @@ fuckc 正常模式按下在文首自动注释cpp格式
 fucks 正常模式按下在文首自动注释bash格式
 空格 语法折叠开关
 ctrl+w + [h,j,k,l] 切换窗口
+ctags -R 
+set tags=tags
 
 改进：
 可以打开gb编码文件
