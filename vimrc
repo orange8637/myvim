@@ -1,3 +1,5 @@
+"backspace可以删除
+set backspace=indent,eol,start
 "编码问题，保存为set fileencoding=gb18030,打开检测set fileencodings
 set fileencodings=ucs-bom,utf-8,GB18030,gbk
 set fileencoding=utf-8
@@ -5,7 +7,7 @@ set encoding=utf-8
 "底部状态栏，隐藏则set laststatus=0
 set statusline=%<[%n]\%F\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}][%{&ff}][ASCII=\%03.3b]\ %-10.(%l,%c%V%)\ %P
 set laststatus=2
-"不要使用vi的键盘模式，而是vim自己的 
+"不兼容vi
 set nocompatible
 "history文件中需要记录的行数 
 set history=1000
@@ -141,7 +143,7 @@ map <F5> :call CompileCode()<CR>
 imap <F5> <ESC>:call CompileCode()<CR>
 vmap <F5> <ESC>:call CompileCode()<CR>
 map <F6> :call RunResult()<CR>
-"neocomplcache补全
+"neocomplcache补全,文件路径补全，文件名补全，字典补全，各种补全
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
