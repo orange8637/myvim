@@ -2,7 +2,7 @@
 * Filename: README
 * Last modified: 2012-05-28 17:29
 * Author: Chen Jiang(姜晨) -- orange8637@gmail.com
-* Description: 简单的vim配置，目前只针对c/c++
+* Description: 简单的vim配置
 */
 这是一个简单的vim配置
 依赖:
@@ -24,9 +24,14 @@ fucks 正常模式按下在文首自动注释bash格式
 ctrl+w + [h,j,k,l] 切换窗口
 ctags -R 
 set tags=tags
+`` 跳转到上次光标位置
+[[,]],｛，｝块代码跳转
+ctrl+],ctrl+t 代码定义跳转
+% 括号匹配
 
 改进：
 可以打开gb编码文件
 底部状态栏可以显示编码类型
 复制外部代码进vim,取消自动注释与缩进set noautoindent, set nocindent, set fo-=r
 "+p, "+y 系统剪贴板
+sudo vim与neocomplcache.vim冲突解决方案(例子)：vim sudo:/etc/apt/sources.list
