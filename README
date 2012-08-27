@@ -1,19 +1,28 @@
 /*
 * Filename: README
-* Last modified: 2012-05-28 17:29
+* Last modified: 2012-07-28 17:29
 * Author: Chen Jiang(姜晨) -- orange8637@gmail.com
-* Description: 简单的vim配置
+* Description: 简单又实用的vim配置
 */
-这是一个简单的vim配置
+这是一个简单又实用的vim配置,满足programmer的日常需求。
 依赖:
 vim 7.0+
 ctags
 步骤:
-git clone git@github.com:orange8637/myvim.git ~/.vim
-cp vimrc ~/.vimrc
+Linux:
+git clone git://github.com/orange8637/myvim
+cp -r myvim ~/.vim
+cp .vim/_vimrc ~/.vimrc
+注：myvim/plugin_backup/下有ctags.tar.gz，可以源代码编译安装
+
+Windows:
+下载好myvim.zip压缩包，解压，将myvim文件夹的所有文件复制合并到
+你的vim安装目录下的vim7x文件夹内，并将_vimrc替换vim目录下原有的。
+再将myvim/plugin_backup/ctags.exe复制到c:/windows/system32/下。
+
 
 常用用法:
-F5 一键编译单源文件
+F5 一键编译单源文件(支持java,python,c++,shell)
 F6 一键运行
 F12 .h .cpp/.c 快速切换
 TAB 超级补全
@@ -30,6 +39,7 @@ ctrl+],ctrl+t 代码定义跳转
 % 括号匹配
 
 改进：
+可以识别windows/linux系统选择不同编码
 可以打开gb编码文件
 底部状态栏可以显示编码类型
 复制外部代码进vim,取消自动注释与缩进set noautoindent, set nocindent, set fo-=r
