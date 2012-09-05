@@ -1,0 +1,22 @@
+"3.4 (created: 2012/07/02 20:07:29)
+
+command! -nargs=* dict tabopen http://dict.youdao.com/search?q=<args>
+command! go tabopen https://www.google.com
+command! ba tabopen http://www.baidu.com
+command! ma tabopen https://mail.qq.com
+command! we tabopen http://weibo.com
+command! gi tabopen https://github.com
+command! yi tabopen https://app.yinxiang.com/Home.action
+map x :yi
+map K gt
+map J gT
+map , <C-b>
+map q :go
+map w :ba
+map e :ma
+map r :we
+map a :dict
+map s :gi
+source! /home/kiwi/.vimperatorrc.local
+
+" vim: set ft=vimperator:
