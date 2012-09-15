@@ -1,3 +1,5 @@
+"search ignore case sensitive
+set ignorecase
 "backspace可以删除
 set backspace=indent,eol,start
 "编码问题，保存为set fileencoding=gb18030,打开检测set fileencodings
