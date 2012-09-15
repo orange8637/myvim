@@ -37,6 +37,7 @@ set tags=tags
 [[,]],｛，｝块代码跳转
 ctrl+],ctrl+t 代码定义跳转
 % 括号匹配
+ctrl+h/j/k/l 窗口之间切换
 
 改进：
 可以识别windows/linux系统选择不同编码
