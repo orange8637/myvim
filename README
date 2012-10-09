@@ -10,10 +10,8 @@ vim 7.0+
 ctags
 步骤:
 Linux:
-git clone git://github.com/orange8637/myvim
-cp -r myvim ~/.vim
-cp .vim/_vimrc ~/.vimrc
-注：myvim/plugin_backup/下有ctags.tar.gz，可以源代码编译安装
+直接执行install.sh脚本
+sh install.sh
 
 Windows:
 下载好myvim.zip压缩包，解压，将myvim文件夹的所有文件复制合并到
