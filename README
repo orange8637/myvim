@@ -7,7 +7,6 @@
 这是一个简单又实用的vim配置,满足programmer的日常需求。
 依赖:
 vim 7.0+
-ctags
 步骤:
 Linux:
 直接执行install.sh脚本
@@ -28,14 +27,14 @@ wm 正常模式下按wm调出资源管理与类管理
 fuckc 正常模式按下在文首自动注释cpp格式
 fucks 正常模式按下在文首自动注释bash格式
 空格 语法折叠开关
-ctrl+w + [h,j,k,l] 切换窗口
+ctrl + [h,j,k,l] 切换窗口
 ctags -R 
 set tags=tags
 `` 跳转到上次光标位置
 [[,]],｛，｝块代码跳转
 ctrl+],ctrl+t 代码定义跳转
 % 括号匹配
-ctrl+h/j/k/l 窗口之间切换
+ctrl+v 神奇列模式
 
 改进：
 可以识别windows/linux系统选择不同编码
