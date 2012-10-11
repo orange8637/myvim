@@ -19,8 +19,8 @@ Windows:
 
 
 常用用法:
-F5 一键编译单源文件(支持java,python,c++,shell)
-F6 一键运行
+F5 一键编译单源文件(支持java,c++)
+F6 一键运行(支持java,c++,python)
 F12 .h .cpp/.c 快速切换
 TAB 超级补全
 wm 正常模式下按wm调出资源管理与类管理

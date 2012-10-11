@@ -1,9 +1,9 @@
-"move between windows
+"窗口切换
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-"search ignore case sensitive
+"忽略大小写
 set ignorecase
 "backspace可以删除
 set backspace=indent,eol,start
@@ -27,7 +27,7 @@ syntax enable
 syntax on
 "配色
 colorscheme darkblue
-"正常模式下按wm
+"正常模式下按wm调出资源管理器
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let g:winManagerWindowLayout='FileExplorer|TagList'
