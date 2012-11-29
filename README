@@ -43,3 +43,7 @@ ctrl+v 神奇列模式
 复制外部代码进vim,取消自动注释与缩进set noautoindent, set nocindent, set fo-=r
 "+p, "+y 系统剪贴板
 sudo vim与neocomplcache.vim冲突解决方案(例子)：vim sudo:/etc/apt/sources.list
+增加web编写插件zencoding,xml
+zencoding用法：
+html:5  ctrl+y+,
+div#a>#div.b ctrl+y,

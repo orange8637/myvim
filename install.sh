@@ -11,11 +11,13 @@ fi
 cp -r . ~/.vim
 cp ~/.vim/_vimrc ~/.vimrc
 
-cd plugin_backup
-tar -zxf ctags-5.8.tar.gz
-cd ctags-5.8
-./configure
-make
-sudo make install
+if [ ! -f /usr/local/bin/ctags ]; then
+	cd plugin_backup
+	tar -zxf ctags-5.8.tar.gz
+	cd ctags-5.8
+	./configure
+	make
+	sudo make install
+fi
 
 exit 0
