@@ -15,7 +15,7 @@ sh install.sh
 Windows:
 下载好myvim.zip压缩包，解压，将myvim文件夹的所有文件复制合并到
 你的vim安装目录下的vim7x文件夹内，并将_vimrc替换vim目录下原有的。
-再将myvim/plugin_backup/ctags.exe复制到c:/windows/system32/下。
+再将ctags.exe复制到c:/windows/system32/下。
 
 
 常用用法:

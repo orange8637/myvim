@@ -12,7 +12,6 @@ cp -r . ~/.vim
 cp ~/.vim/_vimrc ~/.vimrc
 
 if [ ! -f /usr/local/bin/ctags ]; then
-	cd plugin_backup
 	tar -zxf ctags-5.8.tar.gz
 	cd ctags-5.8
 	./configure
