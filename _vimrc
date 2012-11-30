@@ -26,7 +26,7 @@ set history=1000
 syntax enable
 syntax on
 "配色
-colorscheme darkblue
+colorscheme desert
 "正常模式下按wm调出资源管理器
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
@@ -61,6 +61,16 @@ function AddTitle()
 	call append(5,"*/")
 endf
 map fuckc :call AddTitle():$o
+"fuckp 添加首注释
+function AddTitle2()
+	call setline(1,"#!/usr/bin/env python")
+	call append(1,"#-*- coding: utf-8 -*-")
+	call append(2,"#Filename: " . expand("%"))
+	call append(3,"#" . "Last modified: " . strftime("%Y-%m-%d %H:%M"))
+	call append(4,"#Author: Chen Jiang(姜晨) -- orange8637@gmail.com")
+	call append(5,"#Description: ")
+endf
+map fuckp :call AddTitle2():$o
 "fucks 添加首注释
 function AddTitle1()
 	call setline(1,"#!/bin/bash")
