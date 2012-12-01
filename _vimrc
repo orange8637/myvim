@@ -1,3 +1,8 @@
+"不产生交换文件
+set noswapfile
+"显示缩进线
+set list 
+set lcs=tab:\|\ 
 "窗口切换
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -35,7 +40,7 @@ nmap wm :WMToggle<cr>
 "F12 一键切换.h .cpp
 nnoremap <silent> <F12> :A<CR>
 "STL补全
-set tags+=~/.vim/tags
+set tags+=~/.vim/cpp
 "代码折叠
 set foldenable              " 开始折叠
 set foldmethod=syntax       " 设置语法折叠
@@ -238,4 +243,3 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
-
