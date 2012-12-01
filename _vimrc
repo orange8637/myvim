@@ -20,6 +20,8 @@ if has("win32")
 else
 	set encoding=utf-8
 endif
+"pyflakes-vim
+let g:pyflakes_use_quickfix=1
 "底部状态栏，隐藏则set laststatus=0
 set statusline=%<[%n]\%F\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}][%{&ff}][ASCII=\%03.3b]\ %-10.(%l,%c%V%)\ %P
 set laststatus=2
