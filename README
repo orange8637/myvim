@@ -26,6 +26,7 @@ TAB 超级补全
 wm 正常模式下按wm调出资源管理与类管理
 fuckc 正常模式按下在文首自动注释cpp格式
 fucks 正常模式按下在文首自动注释bash格式
+fuckp 正常模式按下在文首自动注释python格式
 空格 语法折叠开关
 ctrl + [h,j,k,l] 切换窗口
 ctags -R 
@@ -35,15 +36,17 @@ set tags=tags
 ctrl+],ctrl+t 代码定义跳转
 % 括号匹配
 ctrl+v 神奇列模式
+,cc 自动注释（反注释,c<space>)
+xml元素自动闭合标签
+zencoding用法：
+html:5  ctrl+y+,
+div#a>#div.b ctrl+y,ython 语法错误检测
 
 改进：
 可以识别windows/linux系统选择不同编码
+可以显示代码缩进线(仅限tab缩进)
 可以打开gb编码文件
 底部状态栏可以显示编码类型
 复制外部代码进vim,取消自动注释与缩进set noautoindent, set nocindent, set fo-=r
 "+p, "+y 系统剪贴板
 sudo vim与neocomplcache.vim冲突解决方案(例子)：vim sudo:/etc/apt/sources.list
-增加web编写插件zencoding,xml
-zencoding用法：
-html:5  ctrl+y+,
-div#a>#div.b ctrl+y,
