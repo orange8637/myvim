@@ -1,4 +1,4 @@
-"自动注释,cc
+"自动注释,cc ,c<spac> ,cs
 let mapleader=","
 "不产生交换文件
 set noswapfile
