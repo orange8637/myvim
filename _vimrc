@@ -1,3 +1,5 @@
+"自动注释,cc
+let mapleader=","
 "不产生交换文件
 set noswapfile
 "显示缩进线
