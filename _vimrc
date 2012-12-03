@@ -44,7 +44,7 @@ nmap wm :WMToggle<cr>
 "F12 一键切换.h .cpp
 nnoremap <silent> <F12> :A<CR>
 "STL补全
-set tags+=~/.vim/cpp
+"set tags+=~/.vim/cpp
 "代码折叠
 set foldenable              " 开始折叠
 set foldmethod=syntax       " 设置语法折叠
