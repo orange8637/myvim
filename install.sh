@@ -4,7 +4,7 @@
 #Author: Chen Jiang(姜晨) -- orange8637@gmail.com
 #Description: vim config install
 
-if [! -d ~/.vim ];then
+if [ ! -d ~/.vim ];then
 	mkdir ~/.vim
 fi
 if [ -d ~/.vim ];then
